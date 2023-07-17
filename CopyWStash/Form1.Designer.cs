@@ -30,14 +30,14 @@
         {
             components = new System.ComponentModel.Container();
             folderBrowserDialog1 = new FolderBrowserDialog();
-            textBox1 = new TextBox();
+            textRemove = new TextBox();
             splitContainer1 = new SplitContainer();
             button1 = new Button();
             label1 = new Label();
             label2 = new Label();
-            textBox2 = new TextBox();
+            textPrefix = new TextBox();
             label3 = new Label();
-            textBox3 = new TextBox();
+            textSuffix = new TextBox();
             imageList1 = new ImageList(components);
             label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
@@ -46,12 +46,12 @@
             splitContainer1.SuspendLayout();
             SuspendLayout();
             // 
-            // textBox1
+            // textRemove
             // 
-            textBox1.Location = new Point(3, 233);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(239, 27);
-            textBox1.TabIndex = 0;
+            textRemove.Location = new Point(3, 233);
+            textRemove.Name = "textRemove";
+            textRemove.Size = new Size(239, 27);
+            textRemove.TabIndex = 0;
             // 
             // splitContainer1
             // 
@@ -61,12 +61,12 @@
             // splitContainer1.Panel1
             // 
             splitContainer1.Panel1.Controls.Add(label3);
-            splitContainer1.Panel1.Controls.Add(textBox3);
+            splitContainer1.Panel1.Controls.Add(textSuffix);
             splitContainer1.Panel1.Controls.Add(label2);
-            splitContainer1.Panel1.Controls.Add(textBox2);
+            splitContainer1.Panel1.Controls.Add(textPrefix);
             splitContainer1.Panel1.Controls.Add(label1);
             splitContainer1.Panel1.Controls.Add(button1);
-            splitContainer1.Panel1.Controls.Add(textBox1);
+            splitContainer1.Panel1.Controls.Add(textRemove);
             // 
             // splitContainer1.Panel2
             // 
@@ -103,12 +103,12 @@
             label2.TabIndex = 4;
             label2.Text = "Add to front of text...";
             // 
-            // textBox2
+            // textPrefix
             // 
-            textBox2.Location = new Point(3, 321);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(239, 27);
-            textBox2.TabIndex = 3;
+            textPrefix.Location = new Point(3, 321);
+            textPrefix.Name = "textPrefix";
+            textPrefix.Size = new Size(239, 27);
+            textPrefix.TabIndex = 3;
             // 
             // label3
             // 
@@ -120,12 +120,12 @@
             label3.TabIndex = 6;
             label3.Text = "...add to end of text.";
             // 
-            // textBox3
+            // textSuffix
             // 
-            textBox3.Location = new Point(3, 374);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(239, 27);
-            textBox3.TabIndex = 5;
+            textSuffix.Location = new Point(3, 374);
+            textSuffix.Name = "textSuffix";
+            textSuffix.Size = new Size(239, 27);
+            textSuffix.TabIndex = 5;
             // 
             // imageList1
             // 
@@ -162,14 +162,14 @@
         #endregion
 
         private FolderBrowserDialog folderBrowserDialog1;
-        private TextBox textBox1;
+        private TextBox textRemove;
         private SplitContainer splitContainer1;
         private Label label1;
         private Button button1;
         private Label label3;
-        private TextBox textBox3;
+        private TextBox textSuffix;
         private Label label2;
-        private TextBox textBox2;
+        private TextBox textPrefix;
         private Label label4;
         private ImageList imageList1;
     }
