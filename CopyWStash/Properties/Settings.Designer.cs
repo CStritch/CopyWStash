@@ -26,12 +26,36 @@ namespace CopyWStash.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string File_Name {
+        public string Origin_File_Name {
             get {
-                return ((string)(this["File_Name"]));
+                return ((string)(this["Origin_File_Name"]));
             }
             set {
-                this["File_Name"] = value;
+                this["Origin_File_Name"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Destination_File_Name {
+            get {
+                return ((string)(this["Destination_File_Name"]));
+            }
+            set {
+                this["Destination_File_Name"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool First_Time_Flag {
+            get {
+                return ((bool)(this["First_Time_Flag"]));
+            }
+            set {
+                this["First_Time_Flag"] = value;
             }
         }
     }
